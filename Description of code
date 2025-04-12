@@ -1,0 +1,51 @@
+NumSum automates the extraction and summation of numerical values embedded in text files. Ideal for scenarios like:
+
+Analyzing log files for numerical metrics
+
+Processing data exports with mixed text/numbers
+
+Educational use (teaching regex or file I/O in Python)
+
+Key Features
+Regex-Powered Extraction
+Uses re.findall() to identify numbers in any format (e.g., 42, 7,395, 9876).
+
+Multi-File Support
+Processes multiple files in a single run (e.g., regex_sum_42.txt, regex_sum_2193011.txt).
+
+Error Resilience
+Skips missing files instead of crashing, ensuring partial results even with invalid inputs.
+
+Line-by-Line Processing
+Efficiently handles large files without loading the entire file into memory.
+
+Clear Output
+Provides progress updates and a final total sum.
+
+Technical Specifications
+Language: Python 3
+
+Dependencies: Built-in re module (no external libraries required)
+
+Input: Text files (.txt) with embedded numbers
+
+Output: Terminal display of results
+
+Use Cases
+Data Analysis: Summing values from logs, reports, or sensor data.
+
+Education: Teaching regex, file handling, or basic Python scripting.
+
+Automation: Integrating into workflows for bulk number extraction.
+
+Project Tagline
+"Extract, Sum, Simplify – Effortless Number Crunching from Text Files!"
+
+Directory Structure Example
+bash
+Copy
+numsum_project/  
+├── numsum.py                 # Main script  
+├── regex_sum_42.txt          # Sample data file 1  
+├── regex_sum_2193011.txt     # Sample data file 2  
+└── README.md                 # Documentation (optional)  
